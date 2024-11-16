@@ -1,0 +1,26 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Triangulos</title>
+</head>
+<body>
+    <script>
+        let triangulosSuperficieMayor12 = 0;
+
+        for (let i = 1; i <= 3; i++) {
+            let base = parseFloat(prompt(`Ingrese la base del triángulo ${i}:`));
+            let altura = parseFloat(prompt(`Ingrese la altura del triángulo ${i}:`));
+            let superficie = (base * altura) / 2;
+
+            document.write(`Triángulo ${i} - Base: ${base}, Altura: ${altura}, Superficie: ${superficie}` + '<br>');
+
+            if (superficie > 12) {
+                triangulosSuperficieMayor12++;
+            }
+        }
+
+        document.write(`Cantidad de triángulos cuya superficie es mayor a 12: ${triangulosSuperficieMayor12}`);
+    </script>
+</body>
+</html>

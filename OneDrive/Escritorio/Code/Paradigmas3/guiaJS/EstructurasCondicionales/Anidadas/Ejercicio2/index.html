@@ -1,0 +1,26 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma y Multiplicación Condicional</title>
+</head>
+<body>
+    <script>
+        let num1,num2,num3,resultado;
+        num1 = parseInt(prompt("Ingrese el primer valor: "));
+        num2 = parseInt(prompt("Ingrese el segundo valor: "));
+        num3 = parseInt(prompt("Ingrese el tercer valor: "));
+
+        if(num1 === num2){
+            if(num2 === num3){
+                resultado = (num1+num2)*num3;
+                document.write("La suma de los dos primeros numeros multiplicado por el tercer numero es: ", resultado);
+            }else{
+                document.write("Los números NO son iguales");
+            }
+        }else{
+            document.write("Los números NO son iguales");
+        }
+    </script>
+</body>
+</html>

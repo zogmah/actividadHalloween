@@ -1,0 +1,32 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Contraseñas</title>
+</head>
+<body>
+    <h2>Validación de Contraseñas</h2>
+    <label for="password1">Ingresa tu contraseña:</label>
+    <input type="password" id="password1" placeholder="Escribe tu contraseña"><br><br>
+
+    <label for="password2">Repite tu contraseña:</label>
+    <input type="password" id="password2" placeholder="Repite tu contraseña"><br><br>
+
+    <button onclick="validarContraseñas()">Validar</button>
+
+    <script>
+        function validarContraseñas() {
+            const password1 = document.getElementById("password1").value;
+            const password2 = document.getElementById("password2").value;
+
+            if (password1 === "" || password2 === "") {
+                alert("Por favor, completa ambos campos.");
+            } else if (password1 === password2) {
+                alert("Las contraseñas coinciden.");
+            } else {
+                alert("Las contraseñas no coinciden.");
+            }
+        }
+    </script>
+</body>
+</html>

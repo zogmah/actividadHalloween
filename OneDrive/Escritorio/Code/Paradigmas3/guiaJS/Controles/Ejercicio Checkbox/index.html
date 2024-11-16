@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Checkbox</title>
+    <script>
+        function mostrarDeportes() {
+            const deportesSeleccionados = [];
+            const checkboxes = document.querySelectorAll('input[name="deporte"]:checked');
+            checkboxes.forEach((checkbox) => {
+                deportesSeleccionados.push(checkbox.value);
+            });
+            alert("Has seleccionado: " + deportesSeleccionados.join(", "));
+        }
+    </script>
+</head>
+<body>
+    <h2>Selecciona los deportes que practicas:</h2>
+    <label><input type="checkbox" name="deporte" value="Fútbol"> Fútbol</label><br>
+    <label><input type="checkbox" name="deporte" value="Básket"> Básket</label><br>
+    <label><input type="checkbox" name="deporte" value="Tenis"> Tenis</label><br>
+    <button onclick="mostrarDeportes()">Seleccionar</button>
+</body>
+</html>

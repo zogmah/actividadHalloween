@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordenadas</title>
+</head>
+<body>
+    <script>
+        let x,y;
+        x = parseInt(prompt("Ingrese la coordenada x: "));
+        y = parseInt(prompt("Ingrese la coordenada y: "));
+
+        if (x > 0 && y > 0) {
+            document.write("El punto está en el 1° Cuadrante.");
+        } else if (x < 0 && y > 0) {
+            document.write("El punto está en el 2° Cuadrante.");
+        } else if (x < 0 && y < 0) {
+            document.write("El punto está en el 3° Cuadrante.");
+        } else if (x > 0 && y < 0) {
+            document.write("El punto está en el 4° Cuadrante.");
+        } else if (x === 0 && y === 0) {
+            document.write("El punto está en el origen.");
+        } else if (x === 0) {
+            document.write("El punto está sobre el eje Y.");
+        } else {
+            document.write("El punto está sobre el eje X.");
+        }
+    </script>
+</body>
+</html>

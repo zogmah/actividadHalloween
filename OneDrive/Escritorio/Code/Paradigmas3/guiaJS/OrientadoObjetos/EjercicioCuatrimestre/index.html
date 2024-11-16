@@ -1,0 +1,23 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En que cuatrimestre estamos?</title>
+</head>
+<body>
+    <script>
+        function mostrarCuatrimestre(mes){
+            if(mes >= 1 && mes <=4){
+                document.write("Estamos en el primer cuatrimestre");
+            } else if(mes >= 5 && mes <= 8){
+                document.write("Estamos en el segundo cuatrimestre");
+            } else{
+                document.write("Estamos en el tercer cuatrimestre");
+            }
+        }
+        let fecha = new Date();
+        let mes = fecha.getMonth();
+        mostrarCuatrimestre();
+    </script>
+</body>
+</html>

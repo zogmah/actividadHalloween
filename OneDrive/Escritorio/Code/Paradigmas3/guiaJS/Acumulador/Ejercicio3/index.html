@@ -1,0 +1,29 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de sueldos</title>
+</head>
+<body>
+    <script>
+        let sueldoTotal = 0;
+        let empleadosEntre100y300 = 0;
+        let empleadosMasDe300 = 0;
+
+        for (let i = 0; i < 5; i++) {
+            let sueldo = parseFloat(prompt("Ingrese el sueldo del empleado " + (i + 1) + ":"));
+            sueldoTotal += sueldo;
+
+            if (sueldo >= 100 && sueldo <= 300) {
+                empleadosEntre100y300++;
+            } else if (sueldo > 300) {
+                empleadosMasDe300++;
+            }
+        }
+
+        document.write("Cantidad de empleados que cobran entre $100 y $300: " + empleadosEntre100y300 + '<br>');
+        document.write("Cantidad de empleados que cobran más de $300: " + empleadosMasDe300 + '<br>');
+        document.write("Importe total que gasta la empresa en sueldos: $" + sueldoTotal+ '<br>');
+    </script>
+</body>
+</html>

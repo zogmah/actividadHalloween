@@ -1,0 +1,37 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Banco</title>
+</head>
+<body>
+    <script>
+        let sumaAcreedores = 0;
+        let numeroCuenta;
+
+        do {
+            numeroCuenta = parseInt(prompt("Ingrese el número de cuenta (negativo para finalizar):"));
+            if (numeroCuenta >= 0) {
+                let nombreCliente = prompt("Ingrese el nombre del cliente:");
+                let saldoActual = parseFloat(prompt("Ingrese el saldo actual de la cuenta:"));
+
+                let estado;
+                if (saldoActual > 0) {
+                    estado = "Acreedor";
+                    sumaAcreedores += saldoActual;
+                } else if (saldoActual < 0) {
+                    estado = "Deudor";
+                } else {
+                    estado = "Nulo";
+                }
+
+                document.write("Número de cuenta: " + numeroCuenta);
+                document.write(". Nombre del cliente: " + nombreCliente);
+                document.write(". Estado de la cuenta: " + estado + '<br>');
+            }
+        } while (numeroCuenta >= 0);
+
+        console.log("La suma total de los saldos acreedores es: " + sumaAcreedores);
+    </script>
+</body>
+</html>

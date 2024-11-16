@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Radio</title>
+    <script>
+        function verificarEdad() {
+            const seleccion = document.querySelector('input[name="edad"]:checked');
+            if (seleccion) {
+                const mensaje = seleccion.value === "sí" ? 
+                    "Puedes ingresar al sitio." : 
+                    "No puedes ingresar al sitio.";
+                alert(mensaje);
+            } else {
+                alert("Por favor, selecciona una opción.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>¿Eres mayor de 18 años?</h2>
+    <label><input type="radio" name="edad" value="sí"> Sí</label><br>
+    <label><input type="radio" name="edad" value="no"> No</label><br>
+    <button onclick="verificarEdad()">Verificar</button>
+</body>
+</html>

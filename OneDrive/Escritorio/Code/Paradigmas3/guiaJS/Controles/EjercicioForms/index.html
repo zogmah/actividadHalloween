@@ -1,0 +1,25 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevar al cubo</title>
+</head>
+<body>
+    <h2>Elevar un número al cubo</h2>
+    <label for="numero">Ingresa un número entero:</label>
+    <input type="number" id="numero" placeholder="Escribe un número">
+    <button onclick="elevarAlCubo()">Calcular</button>
+
+    <script>
+        function elevarAlCubo() {
+            const numero = parseInt(document.getElementById("numero").value);
+            if (!isNaN(numero)) {
+                const resultado = Math.pow(numero, 3);
+                alert(`El número ${numero} elevado al cubo es ${resultado}.`);
+            } else {
+                alert("Por favor, ingresa un número válido.");
+            }
+        }
+    </script>
+</body>
+</html>

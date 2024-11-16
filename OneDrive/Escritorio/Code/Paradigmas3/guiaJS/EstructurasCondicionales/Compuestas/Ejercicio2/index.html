@@ -1,0 +1,21 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio Calificaciones</title>
+</head>
+<body>
+    <script>
+        let nota1, nota2, nota3, promedio;
+        nota1 = parseInt(prompt('Ingrese la primera calificación del alumno'));
+        nota2 = parseInt(prompt('Ingrese la segunda calificación del alumno'));
+        nota3 = parseInt(prompt('Ingrese la tercera y última calificación del alumno'));
+        promedio = Math.round((nota1 + nota2 + nota3)/3); /* Utilizo Math.round para que redondee hacia arriba cuando la calificación sea de más de #,50, pero redondee hacía abajo cuando sea menor o igual a #,50*/
+        if(promedio<7){
+            document.write('Con su promedio de ', promedio, ' el alumno no promociona la materia');
+        } else {
+            document.write('Con su promedio de ', promedio, ' el alumno promociona la materia');
+        }
+    </script>
+</body>
+</html>

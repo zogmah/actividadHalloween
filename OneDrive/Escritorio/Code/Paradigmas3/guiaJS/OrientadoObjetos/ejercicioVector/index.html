@@ -1,0 +1,37 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En que cuatrimestre estamos?</title>
+</head>
+<body>
+    <script>
+        function rellenarVector(){
+            let vector = [];
+            let acumuladoTotal = 0;
+            let acumuladoMayor36 = 0;
+            let cantidadMayor50 = 0;
+            for (let i = 0; i < 8; i++) {
+                let elemento = parseFloat(prompt(`Ingrese el elemento ${i + 1} del vector:`));
+                vector.push(elemento);
+                
+                acumuladoTotal += elemento;
+                
+                if (elemento > 36) {
+                    acumuladoMayor36 += elemento;
+                }
+                
+                if (elemento > 50) {
+                    cantidadMayor50++;
+                }
+            }
+
+            document.write(`Valor acumulado de todos los elementos del vector: ${acumuladoTotal}` + '<br>');
+            document.write(`Valor acumulado de los elementos mayores a 36: ${acumuladoMayor36}` + '<br>');
+            document.write(`Total de valores mayores a 50: ${cantidadMayor50}`);
+
+        }
+        rellenarVector();
+    </script>
+</body>
+</html>

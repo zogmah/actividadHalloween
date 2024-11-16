@@ -1,0 +1,25 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Pares y Impares</title>
+</head>
+<body>
+    <script>
+        let pares = 0;
+        let impares = 0;
+
+        for (let i = 0; i < 5; i++) {
+            let numero = parseInt(prompt("Ingrese el número " + (i + 1) + ":"));
+            if (numero % 2 === 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+        }
+
+        document.write("Cantidad de números pares: " + pares + '<br>');
+        document.write("Cantidad de números impares: " + impares + '<br>');
+    </script>
+</body>
+</html>

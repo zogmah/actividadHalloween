@@ -1,0 +1,19 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Estructuras Condicionales</title>
+</head>
+<body>
+    <script>
+        let numA, numB;
+        numA = parseInt(prompt('Ingrese el primer número'));
+        numB = parseInt(prompt('Ingrese el segundo número'));
+        if (numA>numB) {
+            document.write('La suma de ', numA, ' y ', numB, ' es de ', numA + numB, '<br>', 'Y su resta es ', numA - numB);
+        } else{
+            document.write('El producto de ', numA, ' y ', numB, ' es de ', numA * numB, '<br>', 'Y su división es de ', numA / numB);
+        } /* También va a salir el producto y división si los números son iguales según este condicional*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Promoción Academica</title>
+</head>
+<body>
+    <script>
+        let mayoresOIgualesA7 = 0;
+        let menoresA7 = 0;
+
+        for (let i = 0; i < 10; i++) {
+            let nota = parseFloat(prompt("Ingrese la nota del alumno " + (i + 1) + ":"));
+            if (nota >= 7) {
+                mayoresOIgualesA7++;
+            } else {
+                menoresA7++;
+            }
+        }
+
+        document.write("Cantidad de notas mayores o iguales a 7: " + mayoresOIgualesA7 + '<br>');
+        document.write("Cantidad de notas menores a 7: " + menoresA7);
+    </script>
+</body>
+</html>

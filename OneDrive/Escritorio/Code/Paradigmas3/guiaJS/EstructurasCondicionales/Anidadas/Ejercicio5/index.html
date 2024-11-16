@@ -1,0 +1,25 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Sueldos</title>
+</head>
+<body>
+    <script>
+    let sueldo = parseFloat(prompt("Ingrese el sueldo del operario: "));
+    let antiguedad = parseInt(prompt("Ingrese la antigüedad en años del operario: "));
+
+    if (sueldo < 500) {
+        if (antiguedad >= 10) {
+            sueldo *= 1.20;
+            document.write("El sueldo con un aumento del 20% es: " + sueldo);
+        } else {
+            sueldo *= 1.05;
+            document.write("El sueldo con un aumento del 5% es: " + sueldo);
+        }
+    } else {
+        document.write("El sueldo se mantiene sin cambios: " + sueldo);
+    }
+    </script>
+</body>
+</html>

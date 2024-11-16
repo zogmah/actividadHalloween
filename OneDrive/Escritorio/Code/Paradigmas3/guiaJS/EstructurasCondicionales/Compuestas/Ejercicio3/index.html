@@ -1,0 +1,20 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de dígitos</title>
+</head>
+<body>
+    <script>
+        let valor;
+        valor = parseInt(prompt('Ingrese un numero de uno o dos digitos'));
+        if (valor >= 0 && valor <= 9) {
+            document.write("El número tiene un dígito.");
+        } else if (valor >= 10 && valor <= 99) {
+            document.write("El número tiene dos dígitos.");
+        } else {
+            document.write("El número no es de uno o dos dígitos.");
+        }
+    </script>
+</body>
+</html>
