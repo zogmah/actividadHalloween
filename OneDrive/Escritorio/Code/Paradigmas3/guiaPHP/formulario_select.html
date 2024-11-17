@@ -1,0 +1,11 @@
+<form action="scripts/procesar_select.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+    <label for="ingresos">Ingresos:</label>
+    <select id="ingresos" name="ingresos" required>
+        <option value="1-1000">1-1000</option>
+        <option value="1001-3000">1001-3000</option>
+        <option value="3001+">Más de 3000</option>
+    </select>
+    <button type="submit">Enviar</button>
+</form>
