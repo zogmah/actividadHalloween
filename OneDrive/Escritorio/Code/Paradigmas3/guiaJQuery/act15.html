@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MouseDown y MouseUp</title>
+</head>
+<body>
+    <button id="btn1">Botón 1</button>
+    <button id="btn2">Botón 2</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('button').mousedown(function() {
+            $(this).css('background-color', 'red');
+        }).mouseup(function() {
+            $(this).css('background-color', '');
+        });
+    </script>
+</body>
+</html>

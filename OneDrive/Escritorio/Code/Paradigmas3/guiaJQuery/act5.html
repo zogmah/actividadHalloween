@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambiar Color de Filas</title>
+</head>
+<body>
+    <table id="tabla1" border="1">
+        <tr><td>Fila 1</td></tr>
+        <tr><td>Fila 2</td></tr>
+        <tr><td>Fila 3</td></tr>
+    </table>
+
+    <table id="tabla2" border="1">
+        <tr><td>Fila A</td></tr>
+        <tr><td>Fila B</td></tr>
+        <tr><td>Fila C</td></tr>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#tabla1 tr').click(function() {
+            $(this).css('background-color', 'lightblue');
+        });
+    </script>
+</body>
+</html>

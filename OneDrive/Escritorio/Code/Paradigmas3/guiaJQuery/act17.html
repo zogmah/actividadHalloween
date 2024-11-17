@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evento blur con jQuery</title>
+</head>
+<body>
+    <form>
+        <label for="campoTexto">Ingrese texto:</label>
+        <input type="text" id="campoTexto">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#campoTexto').blur(function() {
+            let valor = $(this).val(); // Obtener el valor del campo de texto
+            if (valor.length === 0) {   // Verificar si el valor es vacío
+                alert("No ingresó datos");
+            }
+        });
+    </script>
+</body>
+</html>

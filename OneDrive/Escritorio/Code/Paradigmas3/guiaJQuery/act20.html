@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Show y Hide</title>
+</head>
+<body>
+    <div id="texto" style="width: 200px; height: 200px; background-color: lightgray;">
+        <p>Párrafo dentro del div.</p>
+    </div>
+    <p id="oculto" style="display: none;">Este es otro bloque de texto oculto.</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#texto').click(function() {
+            $(this).hide('slow', function() {
+                $('#oculto').show('slow');
+            });
+        });
+    </script>
+</body>
+</html>

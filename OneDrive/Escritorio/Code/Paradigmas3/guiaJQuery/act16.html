@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evento DblClick</title>
+</head>
+<body>
+    <div id="caja" style="width: 800px; height: 70px; background-color: lightgray;"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#caja').dblclick(function() {
+            let size = $(this).width() === 800 ? 250 : 800;
+            $(this).css({ width: size, height: size });
+        });
+    </script>
+</body>
+</html>

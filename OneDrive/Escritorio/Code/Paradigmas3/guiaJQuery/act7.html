@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambiar Contenido de Tabla</title>
+</head>
+<body>
+    <table id="tabla1" border="1">
+        <tr><td>1A</td><td>1B</td><td>1C</td></tr>
+        <tr><td>2A</td><td>2B</td><td>2C</td></tr>
+        <tr><td>3A</td><td>3B</td><td>3C</td></tr>
+    </table>
+
+    <table id="tabla2" border="1">
+        <tr><td>1D</td><td>1E</td><td>1F</td></tr>
+        <tr><td>2D</td><td>2E</td><td>2F</td></tr>
+        <tr><td>3D</td><td>3E</td><td>3F</td></tr>
+    </table>
+
+    <button>Cambiar Contenido</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('button').click(function() {
+            $('#tabla1 td').text('-');
+        });
+    </script>
+</body>
+</html>

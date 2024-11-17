@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mousemove</title>
+</head>
+<body>
+    <div id="area" style="width: 200px; height: 200px; border: 1px solid black;"></div>
+    <p id="coordenadas"></p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#area').mousemove(function(event) {
+            $('#coordenadas').text('Coordenadas: (' + event.pageX + ', ' + event.pageY + ')');
+        }).mouseout(function() {
+            $('#coordenadas').text('Fuera del área.');
+        });
+    </script>
+</body>
+</html>

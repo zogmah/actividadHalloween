@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ocultar Palabras</title>
+</head>
+<body>
+    <p>Este es un texto con algunas <strong>palabras</strong> que serán <strong>ocultadas</strong> al hacer clic.</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('strong').click(function() {
+            $(this).hide();
+        });
+    </script>
+</body>
+</html>

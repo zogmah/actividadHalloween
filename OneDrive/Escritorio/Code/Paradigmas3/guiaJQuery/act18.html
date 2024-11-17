@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evento Blur</title>
+</head>
+<body>
+    <input type="text" id="campo" placeholder="Ingrese texto">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#campo').blur(function() {
+            if ($(this).val().trim() === '') {
+                alert('No ingresó datos.');
+            }
+        });
+    </script>
+</body>
+</html>

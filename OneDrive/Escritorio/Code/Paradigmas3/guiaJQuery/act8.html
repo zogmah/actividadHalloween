@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cambiar Enlace</title>
+</head>
+<body>
+    <a id="enlace" href="">Enlace</a>
+
+    <button id="btn1">Hipervínculo 1</button>
+    <button id="btn2">Hipervínculo 2</button>
+    <button id="btn3">Hipervínculo 3</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#btn1').click(function() {
+            $('#enlace').attr('href', 'https://www.google.com');
+            $('#enlace').text('Ir a Google');
+        });
+
+        $('#btn2').click(function() {
+            $('#enlace').attr('href', 'https://www.facebook.com');
+            $('#enlace').text('Ir a Facebook');
+        });
+
+        $('#btn3').click(function() {
+            $('#enlace').attr('href', 'https://www.twitter.com');
+            $('#enlace').text('Ir a Twitter');
+        });
+    </script>
+</body>
+</html>
